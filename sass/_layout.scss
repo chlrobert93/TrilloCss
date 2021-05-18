@@ -2,7 +2,7 @@
     max-width: 120rem;
     margin: 8rem auto;
     background-color: var(--color-grey-light-2);
-    box-shadow: var(box-shadow);
+    box-shadow: var(--shadow-dark);
 
     min-height: 50rem;
     
@@ -10,10 +10,17 @@
 }
 
 .header{
-
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-dark-2);
+
+    //Para que se agreguen uno a lado del otro
+    display: flex;
+    //Se distribuye el espacio entre los elementos
+    justify-content: space-between;
+    //alinearlos lo mejor posible 
+    align-items: center;
 }
 
 .content{
@@ -29,6 +36,7 @@
 }
 
 .hotel-view{
+    background-color: #fff;
     background-color: rgb(185, 60, 60);
     //Elemento cresca tanto como pueda
     flex: 1;

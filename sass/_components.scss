@@ -1,21 +1,80 @@
 //Logo
 .logo{
-    height: 3.25rem;
+        height: 3.25rem;
+        margin-left: 3rem;
 }
 
-//Search
+////////////////////Search
 .search{
+    
+        //Ocupe todo el espacio posible, que no se encoja, que ocupe el 40% del encabezado
+        flex: 0 0 40%;
+        
+        //Alinear
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     &__input{
+        //Para que pueda heredar las porpiedades
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all .2s;
+        //boton se movera 
+        margin-right: -3.25rem;
+
+        &:focus{
+            //Contorno nulo
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3); 
+            
+
+        }
+
+        &::-webkit-input-placeholder{
+            font-weight: 100;
+            color:var(--color-grey-light-4); 
+        }
 
     }
 
+    &__input:focus + &__button {
+        background-color: var(--color-grey-light-3); 
+    }
+
     &__button{
+        border:none;
+        background-color: var(--color-grey-light-2);
+
+        &:focus{
+            outline: none;
+        }
+
+        //Cuando realizamos click
+        &:active{
+            
+            transform: translateY(2px);
+            border:none;
+           
+        
+            
+        }
+           
 
     }
 
     &__icon{
         height: 2rem;
         width: 2rem;
+        //Cambiar el color del icono
+        fill:var(--color-grey-dark-3);
     }
 }
 
@@ -24,6 +83,7 @@
 
 //User navegatión
 .user-nav{
+         background-color: lightblue;
     &__icon-box{
 
     }
