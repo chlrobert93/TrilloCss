@@ -73,3 +73,19 @@ body {
 .hotel-view {
   background-color: #b93c3c;
   flex: 1; }
+
+.logo {
+  height: 3.25rem; }
+
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
+
+.user-nav__icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+
+.user-nav__user-photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%; }
