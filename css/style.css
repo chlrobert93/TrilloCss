@@ -62,7 +62,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-dark-2);
+  border-bottom: 1px solid var(--color-grey-dark-2);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -214,13 +214,13 @@ body {
     display: block; }
 
 .overview {
-  display: flex; }
+  display: flex;
+  border-bottom: 1px solid var(--color-grey-light-2); }
   .overview__heading {
     text-transform: uppercase;
     color: var(--color-grey-dark-2); }
   .overview__starts {
-    margin-right: auto;
-    background-color: orange; }
+    margin-right: auto; }
   .overview__icon-start, .overview__icon-location {
     width: 1.75rem;
     height: 1.75rem;
