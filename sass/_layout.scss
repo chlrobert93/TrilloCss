@@ -33,12 +33,18 @@
     background-color: var(--color-grey-dark-1);
     //primer cero no queremos que crezcan los elemento , 0 no se reduce, ancho%
     flex: 0 0 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotel-view{
     background-color: #fff;
     background-color: rgb(185, 60, 60);
     //Elemento cresca tanto como pueda
+    //Alto del cuadro
+    height: 80rem;
     flex: 1;
     
 
