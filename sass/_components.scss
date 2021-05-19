@@ -237,3 +237,64 @@
     text-align: center;
     padding: 2.5rem;
 }
+
+///////////////////////
+////Gallery
+
+.gallery{
+    //Las fotos esten uno a lado del otro
+    display: flex;
+    
+    &__photo{
+        width: 100%;
+        display: block;
+    }
+}
+
+
+///////////////////////
+////Gallery
+.overview{
+    
+       display: flex;
+
+   
+    &__heading{
+        text-transform: uppercase;
+        color: var( --color-grey-dark-2);
+    }
+
+    &__starts{
+       //Ocupa todo el espacio disponible
+      //espacio entre las estrellas y  icono location 
+      //flex: 1;
+      margin-right: auto;
+      background-color: orange;
+ 
+
+    }
+
+    &__icon-start,
+    &__icon-location{
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+
+    }   
+
+    &__location{
+  
+    }
+
+    &__rating{
+
+    }
+
+    &__rating-averange{
+
+    }
+
+    &__rating-count{
+
+    }
+}
