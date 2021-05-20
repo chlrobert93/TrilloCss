@@ -253,12 +253,13 @@
 
 
 ///////////////////////
-////Gallery
+////Hotel overview
 .overview{
     
        display: flex;
        align-items: center;
        border-bottom: 1px solid var(--color-grey-light-2);
+       
 
    
     &__heading{
@@ -290,18 +291,96 @@
     }   
 
     &__location{
-  
+      font-size:1.2rem;
+      align-items:center;
+    }
+
+    &__icon-location{
+        margin-right: .5rem ;
     }
 
     &__rating{
+         background-color:  var(--color-primary);
+         color: #fff;
+         margin-left: 3rem;
+         padding: 0 2.25rem;
+         //Estirar la sombra
+         align-self: stretch;
 
+         display:flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         
     }
 
     &__rating-averange{
-
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin-bottom: -3px;
+        
+      
     }
 
     &__rating-count{
+        font-size: .8rem;
+        text-transform: uppercase;
+
+
+    }
+}
+
+
+///////////////////////
+////Button inline
+
+
+.btn-inline{
+    border:none;
+    color: var(--color-primary);
+    //Heredar tamaño de fuente
+    font-size: inherit;
+    //Border inferior, currentColor eredar color padre o el del elemento
+    border-bottom: 1px solid currentColor;
+    //Espacio entre el texto y el borde
+    padding-bottom: 2px;
+    //bloque en linea
+    display: inline-block;
+    background-color: transparent;
+    transition: all .2;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--color-grey-dark-1);
+    }
+
+    &:focus{
+        //outline: 8px ridge rgba(170, 50, 220, .6);
+        //Para no establecer propiedades de contorno
+        outline: none;
+        //animación infinita
+        animation: pulsate 1s infinite;
+    
+    }
+
+}
+
+//Fotogramas clave
+@keyframes pulsate{
+    0%{
+        transform: scale(1);
+        box-shadow: none;
+    }
+    
+    50%{
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+    }
+
+    100%{
+        transform: scale(1);
+        box-shadow: none;
 
     }
 }
