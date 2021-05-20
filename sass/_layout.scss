@@ -13,7 +13,7 @@
     font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
-    border-bottom: 1px solid var(--color-grey-dark-2);
+    border-bottom:var(--line);
 
     //Para que se agreguen uno a lado del otro
     display: flex;
@@ -44,9 +44,34 @@
 
     //Elemento cresca tanto como pueda
     //Alto del cuadro
-    height: 80rem;
+    //height: 80rem;
     flex: 1;
     
+}
+
+///////////Detalles 
+.detail{
+    display:flex;
+    padding: 4.5rem;
+    //background-color: var(--color-grey-dark-1);
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--lines);
+}
+
+.description{
+    font-size: 1.4rem;
+    //background-color: palevioletred;
+    background-color: #fff;
+    //sombra
+    //box-shadow: 0 2rem 5rem rgba(0,0,0,.06);
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex:0 0 60%;
+    margin-right: 4.5rem;
 
 }
 
+.user-reviews{
+  background-color: powderblue;
+  flex:1;
+}
