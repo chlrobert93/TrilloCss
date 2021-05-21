@@ -51,7 +51,7 @@
 
 ///////////Detalles 
 .detail{
-   
+    font-size: 1.4rem;
     display:flex;
     padding: 4.5rem;
     //background-color: var(--color-grey-dark-1);
@@ -60,7 +60,7 @@
 }
 
 .description{
-    font-size: 1.4rem;
+
     //background-color: palevioletred;
     background-color: #fff;
     //sombra
@@ -73,6 +73,7 @@
 }
 
 .user-reviews{
-  background-color: powderblue;
-  flex:1;
+ 
+
+    flex:1;
 }
