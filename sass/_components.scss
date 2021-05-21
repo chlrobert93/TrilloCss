@@ -557,13 +557,101 @@
        font-family: sans-serif;
        z-index: 1;
      
-
-      
-     
-      
-    
    }
+}
 
 
 
+///////////////////////
+////CALL TO ACTION Boton
+.cta{
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__book-now{
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+
+///////////////////////
+////CALL TO ACTION Boton
+
+.btn{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border:none;
+    background-image: linear-gradient(to right, var( --color-primry-light), var(--color-primary-dark));
+    color: #fff;
+    position: relative;
+    //Para oculatar el boton oculto despodamiento 
+    overflow: hidden;
+    cursor:pointer;
+    //Sleccionaremos todos los elementos secundarios
+    &>*{
+        //Para solucionar elementos tipo linea
+        display: inline-block;
+
+        height: 100%;
+        width: 100%;
+        // background-color: aqua;
+
+        transition: all .2s;
+
+    }
+
+    //span es un elelento tipo linea
+    &__visible{
+        //Para solucionar elementos tipo linea
+        //display: inline-block;
+
+        //height: 100%;
+        //width: 100%;
+        // background-color: aqua;
+        padding: 2rem 7.5rem;
+
+    }
+
+    &__invisible{
+        //display: inline-block;
+        //Para que podamos ponerlo fuera del elemento
+        position: absolute;
+        //background-color: aqua;
+        padding: 2rem 0;
+        //height: 100%;
+       // width: 100%;
+        left: 0;
+        top: -100%;
+       // transition: all .2s;
+       
+    }
+
+
+    &:hover{
+        background-image: linear-gradient(to left, var( --color-primry-light), var(--color-primary-dark));
+    }
+
+    &:hover &__visible{
+        transform: translatey(100%);
+
+    }
+
+    &:hover &__invisible{
+       top:0;
+     
+    }
+
+
+    //El enfoque para que el boton lata
+    &:focus{
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+    
 }
