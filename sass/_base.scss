@@ -49,10 +49,25 @@ Grey dark 3: #999;
     --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
     }
 
+    /*Variables de sass*/
+    /*1200px/16=75*/
+    $bp-largest: 75em;
+
+    $bp-large: 68.75em;//1100'x
+
+    $bp-medium: 56.25em;//900px
+
 //hereda todo lo de arriba
 html{
     box-sizing: border-box;
-    font-size: 62.5%; // 1rem = 10px  10px/16px = 62.5;
+    font-size: 62.5%; // 1rem = 10px  10px/16px = 62.5; 
+    
+    /*8/16=.5*/
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%;
+    }
+
+
 }
 
 
