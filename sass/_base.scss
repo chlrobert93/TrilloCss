@@ -53,9 +53,13 @@ Grey dark 3: #999;
     /*1200px/16=75*/
     $bp-largest: 75em;
 
-    $bp-large: 68.75em;//1100'x
+    $bp-large: 68.75em;//1100x
 
     $bp-medium: 56.25em;//900px
+
+    $bp-small: 37.5em; //600px
+
+    $bp-smallest: 31.25em; //500px
 
 //hereda todo lo de arriba
 html{

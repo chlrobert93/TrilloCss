@@ -1,8 +1,8 @@
 .container{
     max-width: 120rem;
     margin: 8rem auto;
-    //background-color: var(--color-grey-light-2);
-    background-color: aqua;
+    background-color: var(--color-grey-light-2);
+    //background-color: aqua;
     box-shadow: var(--shadow-dark);
 
     min-height: 50rem;
@@ -30,7 +30,18 @@
     justify-content: space-between;
     //alinearlos lo mejor posible 
     align-items: center;
-}
+
+    @media only screen and (max-width: $bp-smallest){
+ 
+       //Crea una nueva linea que ya no se ajusta al contenedor
+       flex-wrap: wrap;
+       //Pone la misma cantidad de espacios tanto en el lado izquirdo como en el lado derecho
+       align-content: space-around;
+       height: 11rem;
+    
+       }
+
+    }
 
 .content{
 
@@ -75,6 +86,12 @@
     @media only screen and (max-width: $bp-medium){
       padding: 3rem;
     }
+
+    //Mobil pasar a columnas
+    @media only screen and (max-width: $bp-small){
+        flex-direction: column;
+
+    }
 }
 
 .description{
@@ -92,6 +109,13 @@
         padding: 2rem;
         margin-right: 3rem;
     }
+ 
+    @media only screen and (max-width: $bp-small){
+        margin-right: 0;
+        margin-bottom: 3rem;
+      
+    }
+    
 
 }
 
