@@ -41,12 +41,14 @@ Grey dark 3: #999;
     --color-grey-dark-1: #333;
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
-
     --box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
 
     --line: 1px solid var(--color-grey-light-2);
   //--line: 1px solid var(--color-grey-dark-1);
     --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+    --backgroundMenu: linear-gradient(to right, #c94b4b, #4b134f); 
+    --backgroundPhoto: linear-gradient(to right, #ee097849, #ff6a004d);
+
     }
 
     /*Variables de sass*/
