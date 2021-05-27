@@ -237,7 +237,7 @@ body {
     color: #eee;
     transition: transform 0.2s, height 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
     border-radius: 10px;
-    z-index: 1; }
+    z-index: 100; }
   .user-nav__user:hover .user-nav__user-menu {
     height: 18.3rem;
     border-radius: 10px; }
@@ -260,6 +260,8 @@ body {
       padding: 1rem;
       font-weight: 800;
       transition: all 0.2s; }
+      .user-nav__ms:last-child:hover {
+        color: var(--color-grey-light-4); }
   .user-nav__user-option {
     list-style: none;
     padding: 1rem 2rem;

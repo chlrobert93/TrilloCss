@@ -171,7 +171,7 @@
     color: #eee;
     transition: transform 0.2s, height 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
     border-radius: 10px;
-    z-index: 1;
+    z-index: 100;
 }
 
 &__user:hover &__user-menu {
@@ -210,7 +210,7 @@
   
 
         &:hover {
-            //color: var(--color-grey-dark-1);
+            color: var(--color-grey-light-4);
         }
 
         }
