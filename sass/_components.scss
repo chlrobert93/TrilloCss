@@ -899,5 +899,35 @@
         outline: none;
         animation: pulsate 1s infinite;
     }
-    
 }
+
+.autocomplete {
+    position: relative;
+
+    &-items {
+        position: absolute;
+        border: var(--line);
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        top: 100%;
+        left: 4%;
+        right: 4%;
+
+        & div {
+            padding: 0.7rem 2rem;
+            cursor: pointer;
+            background-color: #fff;
+            border-bottom: var(--line);
+            transition: all 0.2s;
+
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+  
+
+
+

@@ -15,8 +15,8 @@
           <header class="header">
              <img src="img/logo.png" alt="trillo logo" class="logo">       
        
-             <form action="#" class="search">
-                 <input type="text" class="search__input" placeholder="Search hotels">
+             <form autocomplete="off" action="#" class="search autocomplete">
+                 <input   id="searchInput"  type="text" class="search__input" placeholder="Search hotels">
                  <button class="search__button">
                      <svg class="search__icon">
                          <use xlink:href="img/sprite.svg#icon-magnifying-glass">
@@ -291,5 +291,6 @@
            </main>
           </div>
       </div>
+         <script type="text/javascript" src="js/autocomplete.js"></script>
     </body>
 </html>
